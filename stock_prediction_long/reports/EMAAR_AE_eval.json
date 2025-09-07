@@ -1,0 +1,65 @@
+{
+  "metrics": {
+    "rmse_price_1y": 1.3572403878957044,
+    "mape_price_1y": 21.618156215765193,
+    "directional_accuracy_from_cumhead": [
+      0.4,
+      0.6,
+      0.4
+    ],
+    "directional_accuracy_from_vecsum": [
+      0.4,
+      0.4,
+      0.2
+    ],
+    "directional_accuracy_from_cls": [
+      0.4,
+      0.8,
+      0.6
+    ],
+    "directional_accuracy_from_meta": [
+      0.4,
+      0.4,
+      0.4
+    ],
+    "directional_accuracy_best": [
+      0.4,
+      0.8,
+      0.6
+    ],
+    "cum_horizons_used": [
+      12,
+      24,
+      60
+    ],
+    "h_vec_used": 12,
+    "lookback_used": 48,
+    "min_windows_used": 40,
+    "num_folds": 5,
+    "mode": "walk_forward"
+  },
+  "cum_horizons_used_backtest": [
+    12,
+    24,
+    60
+  ],
+  "h_vec_used_backtest": 12,
+  "lookback_used_backtest": 48,
+  "cum_horizons_used_forecast": [
+    12,
+    24,
+    60
+  ],
+  "h_vec_used_forecast": 12,
+  "lookback_used_forecast": 48,
+  "prob_up_by_horizon": {
+    "12m": 0.2958577871322632,
+    "24m": 0.14844132959842682,
+    "60m": 0.14011913537979126
+  },
+  "exp_cum_return_by_horizon": {
+    "12m": -1.5943458080291748,
+    "24m": -1.7315412759780884,
+    "60m": -3.4731171131134033
+  }
+}
