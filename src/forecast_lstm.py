@@ -681,6 +681,7 @@ def main():
     ap.add_argument("--exog", type=str, default="BZ=F,^GSPC,^VIX,DX-Y.NYB,EEM")
     ap.add_argument("--min_fold_windows", type=int, default=20)
     ap.add_argument("--val_tail_windows", type=int, default=DEFAULT_VAL_TAIL_WINDOWS)
+    ap.add_argument("--forecast_only", type=int, default=0, help="Skip backtest for speed (1=yes)")
     ap.add_argument("--debug", type=int, default=1)
     args = ap.parse_args()
 
@@ -707,11 +708,14 @@ def main():
         print("   [skip] not enough usable history"); return
 
     # BACKTEST (out-of-sample)
-    metrics = walk_forward_ensemble(cm, feats, lookbacks, seeds, args.hvec, cum_horizons,
+    if not args.forecast_only:
+        metrics = walk_forward_ensemble(cm, feats, lookbacks, seeds, args.hvec, cum_horizons,
                                     args.rmax, args.use_focal, args.focal_gamma,
                                     min_fold_windows=args.min_fold_windows,
                                     val_tail_windows=args.val_tail_windows,
                                     debug=args.debug)
+    else:
+        print("   [info] forecast_only=1 → skipping backtest.", flush=True)
     if metrics is None:
         print("   [warn] walk-forward not feasible with current settings.")
     else:

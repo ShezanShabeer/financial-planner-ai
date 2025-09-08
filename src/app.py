@@ -7,6 +7,10 @@ from .planner import build_plan  # NEW
 from .nlp_parser import parse_text
 from src.nlp_ml_infer import parse_goals
 
+from typing import List, Dict, Any, Optional
+from pydantic import BaseModel
+from src.services.recommender import recommend as rec_service, load_bands_12m, load_forecast, load_backtest
+
 app = FastAPI(title="UAE Expat Financial Planner")
 
 # Uncomment to allow browser apps on localhost, etc.
@@ -51,6 +55,15 @@ class PlanFromText(BaseModel):
     monthly_budget_map: Optional[Dict[int, float]] = None
     lstm_symbols: Optional[List[str]] = None
 
+class RecommendStocksInput(BaseModel):
+    risk_level: str = "medium"           # "low"|"medium"|"high"
+    candidate_universe: List[str]        # e.g. ["EMAAR.AE","ALDAR.AE",...]
+
+class ForecastOut(BaseModel):
+    forecast: Dict[str, Any]
+    backtest: Optional[Dict[str, Any]] = None
+    bands: Optional[List[Dict[str, Any]]] = None
+
 @app.post("/plan/from-text-advanced")
 def plan_from_text_advanced(payload: PlanFromText):
     parsed = parse_text(payload.goals_text)
@@ -84,3 +97,17 @@ def nlp_parse(req: ParseRequest):
     result: Dict[str, Any] = parse_goals(req.text)
     # Pydantic will validate/shape the response for us
     return result
+
+@app.post("/recommend/stocks")
+def recommend_stocks(payload: RecommendStocksInput):
+    return rec_service(payload.candidate_universe, risk_level=payload.risk_level, topk=5)
+
+@app.get("/forecast/{ticker}", response_model=ForecastOut)
+def get_forecast(ticker: str):
+    out: Dict[str, Any] = {"forecast": load_forecast(ticker)}
+    bt = load_backtest(ticker)
+    if bt: out["backtest"] = bt
+    bands = load_bands_12m(ticker)
+    if bands is not None:
+        out["bands"] = bands.to_dict(orient="records")
+    return out

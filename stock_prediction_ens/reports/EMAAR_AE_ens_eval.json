@@ -1,17 +1,17 @@
 {
   "metrics": {
-    "rmse_price_1y": 0.9550492410847119,
-    "mape_price_1y": 21.436374951823588,
+    "rmse_price_1y": 0.9458863545002263,
+    "mape_price_1y": 21.226146704395553,
     "directional_accuracy_from_cumhead": [
-      0.14285714285714285,
+      0.42857142857142855,
       0.2857142857142857
     ],
     "directional_accuracy_from_vecsum": [
-      0.7142857142857143,
-      0.42857142857142855
+      0.8571428571428571,
+      0.5714285714285714
     ],
     "directional_accuracy_from_cls": [
-      0.42857142857142855,
+      0.5714285714285714,
       0.2857142857142857
     ],
     "directional_accuracy_from_meta": [
