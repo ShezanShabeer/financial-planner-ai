@@ -1,0 +1,212 @@
+{
+  "EMAAR.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.3100925925925926
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.12231633881611545
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.11399496601673623
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.2285311502354176
+    }
+  },
+  "AJMANBANK.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.22972222222222222
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.14938393374299558
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.04499246906503678
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.20735338384117183
+    }
+  },
+  "ALFIRDOUS.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.1401829268292683
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.06863182976250648
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.27971439509270735
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.12542553027609676
+    }
+  },
+  "ALSALAMSUDAN.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.5565250581685429
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": 0.0441202455704139
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.21333231528312585
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.1682271681318832
+    }
+  },
+  "DIB.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.4750085003320752
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": 0.012048256212524922
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.1927069382940204
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.1514104087406808
+    }
+  },
+  "AMLAK.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.25634615384615383
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.33623505510031254
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.7647699117068423
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.7157643079459131
+    }
+  },
+  "EMIRATESNBD.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.3586940298507463
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.036458039486170296
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.18915281518760024
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.16264627163715395
+    }
+  },
+  "AIRARABIA.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.35416666666666663
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.010286752337785587
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.15547388881810092
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.10118774910069109
+    }
+  },
+  "ARMX.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.3049074074074074
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.02828791635076968
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.11703338983743693
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.09203416135913046
+    }
+  },
+  "CBD.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.8110820895522388
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": 0.23879531215000627
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.31374607401533633
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.08299112092656477
+    }
+  },
+  "SUKOON.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.48151185007346814
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.0008554053485749918
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.2292373993299882
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.21453900078863863
+    }
+  },
+  "WATANIA.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.3323931675395417
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": 0.011926753308105498
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.2204630015515661
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.0919008600867313
+    }
+  },
+  "ALRAMZ.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.3092647058823529
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": 0.0003274813782179198
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.6103617071287077
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.2728047257227571
+    }
+  },
+  "DEYAAR.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.250462962962963
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.22143597774252785
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.13368132875850122
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.3401008713911114
+    }
+  },
+  "DFM.AE": {
+    "prob_up_by_horizon": {
+      "12m": 0.24009259259259258
+    },
+    "exp_cum_return_by_horizon": {
+      "12m": -0.043841573391006715
+    },
+    "cond_cum_return_if_up": {
+      "12m": 0.23794432039645633
+    },
+    "cond_cum_return_if_down": {
+      "12m": -0.1328717698806974
+    }
+  }
+}

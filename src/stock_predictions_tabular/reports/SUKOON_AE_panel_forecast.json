@@ -1,0 +1,14 @@
+{
+  "prob_up_by_horizon": {
+    "12m": 0.379539282184335
+  },
+  "exp_cum_return_by_horizon": {
+    "12m": 0.18261601837977484
+  },
+  "cond_cum_return_if_up": {
+    "12m": 0.1396172545016773
+  },
+  "cond_cum_return_if_down": {
+    "12m": -0.1101250892695268
+  }
+}

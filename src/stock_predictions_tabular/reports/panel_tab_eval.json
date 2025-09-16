@@ -1,0 +1,70 @@
+{
+  "metrics": {
+    "rmse_price_mainH": 0.6335577188129763,
+    "mape_price_mainH": 17.80997368476537,
+    "rmse_price_mainH_norm": 0.26349619487548975,
+    "smape_price_mainH_norm": 16.621216271702828,
+    "rmse_cum_return_mainH": 0.3466840015263809,
+    "smape_cum_return_mainH": 139.1983557674427,
+    "directional_accuracy_default": [
+      0.5605536332179931
+    ],
+    "directional_accuracy_tuned": [
+      null
+    ],
+    "horizons_used": [
+      12
+    ],
+    "lookback_used": 30,
+    "num_folds": 578,
+    "regressor": "LightGBM",
+    "classifier": "LogReg (panel+FE) + sign-aware expected return",
+    "threshold_policy_used": "panel_gated",
+    "panel_scaler": "by_ticker",
+    "vt_per_ticker": 6,
+    "brier_score_per_h": {
+      "12m": 0.10490047561279611
+    },
+    "residual_std_per_h": {
+      "12m": 0.28792784685455963
+    },
+    "residual_std_per_symbol": {
+      "12m": {
+        "EMAAR.AE": 0.09392131368084987,
+        "AJMANBANK.AE": 0.09837889068317822,
+        "ALFIRDOUS.AE": 0.13287100600669186,
+        "ALSALAMSUDAN.AE": 0.12745127231328063,
+        "DIB.AE": 0.05356366356643045,
+        "AMLAK.AE": 0.14819276913832552,
+        "EMIRATESNBD.AE": 0.07787919644279653,
+        "AIRARABIA.AE": 0.08980194759894063,
+        "ARMX.AE": 0.09127461802883446,
+        "CBD.AE": 0.07790299328152624,
+        "SUKOON.AE": 0.15136480838404912,
+        "WATANIA.AE": 0.12978592579586232,
+        "ALRAMZ.AE": 0.1328110504194425,
+        "DEYAAR.AE": 0.11208816824409584,
+        "DFM.AE": 0.09768261478976295
+      }
+    },
+    "residual_n_per_symbol": {
+      "12m": {
+        "EMAAR.AE": 240,
+        "AJMANBANK.AE": 240,
+        "ALFIRDOUS.AE": 216,
+        "ALSALAMSUDAN.AE": 240,
+        "DIB.AE": 240,
+        "AMLAK.AE": 228,
+        "EMIRATESNBD.AE": 240,
+        "AIRARABIA.AE": 240,
+        "ARMX.AE": 240,
+        "CBD.AE": 240,
+        "SUKOON.AE": 174,
+        "WATANIA.AE": 240,
+        "ALRAMZ.AE": 210,
+        "DEYAAR.AE": 240,
+        "DFM.AE": 240
+      }
+    }
+  }
+}
